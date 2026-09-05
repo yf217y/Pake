@@ -167,7 +167,7 @@ jobs:
         timeout-minutes: 25
         shell: pwsh
         run: |
-          $args = "${{ inputs.url }}", "--name", "${{ inputs.name }}", "--inject", "zhihu.css", "--multi-window", "--safe-domain", "zhihu.com,zhimg.com"
+          $args = "${{ inputs.url }}", "--name", "${{ inputs.name }}", "--inject", "zhihu.css", "--inject", "zhihu.js"
 
           if ("${{ inputs.icon }}" -ne "") {
             $args += "--icon", "${{ inputs.icon }}"
