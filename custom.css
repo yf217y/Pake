@@ -7,8 +7,8 @@
 div[class*="ad-container"],
 div[class*="ad-wrapper"],
 div[class*="sidebar-ad"] {
-    display: none !important;
-    height: 0 !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
+  display: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
