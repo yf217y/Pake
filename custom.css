@@ -1,0 +1,14 @@
+/* 隐藏喜马拉雅顶部下载提示、横幅广告、推广浮窗 */
+.banner-ad,
+.top-app-download,
+.download-bar,
+.vip-floating-ad,
+.client-download-guide,
+div[class*="ad-container"],
+div[class*="ad-wrapper"],
+div[class*="sidebar-ad"] {
+    display: none !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
