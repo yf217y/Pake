@@ -1,0 +1,21 @@
+/* 1. 隐藏右侧栏营销、App 下载推广、热榜广告 */
+.GlobalSideBar-Download,
+.Banner-link,
+.Card-header-ad,
+.TopStory-adText,
+.Pc-word,
+.Pc-feedAd-container {
+    display: none !important;
+}
+
+/* 2. 隐藏回答/文章内的带货卡片与广告链接 */
+.MCNLinkCard,
+.RichText-MCNLinkCardContainer {
+    display: none !important;
+}
+
+/* 3. 屏蔽未登录/失效时的全局登录弹窗与锁死遮罩 */
+.Modal-wrapper:has(.sign-flow-container),
+.Modal-backdrop:has(+ .Modal-wrapper .sign-flow-container) {
+    display: none !important;
+}
